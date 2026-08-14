@@ -2,7 +2,6 @@
   "version": 2,
   "buildCommand": "",
   "outputDirectory": ".",
-  "public": true,
   "env": {
     "NODE_ENV": "production"
   },

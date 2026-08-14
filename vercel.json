@@ -103,7 +103,7 @@
       ]
     },
     {
-      "source": "/(.*)\\.(?:jpg|jpeg|png|gif|webp|svg)$",
+      "source": "/:path*\\.(jpg|jpeg|png|gif|webp|svg)",
       "headers": [
         {
           "key": "Cache-Control",

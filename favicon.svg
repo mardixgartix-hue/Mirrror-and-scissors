@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .favicon-bg { fill: #5C1020; }
+      .favicon-text { fill: #F5ECD7; font-family: 'Georgia', serif; font-size: 18px; font-weight: bold; }
+    </style>
+  </defs>
+  <rect class="favicon-bg" width="32" height="32" rx="4"/>
+  <text class="favicon-text" x="16" y="24" text-anchor="middle" dominant-baseline="middle">MS</text>
+</svg>

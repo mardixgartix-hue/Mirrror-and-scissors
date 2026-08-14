@@ -1,0 +1,25 @@
+{
+  "name": "mirrors-n-scissors",
+  "version": "1.0.0",
+  "description": "Mirrors N Scissors - Luxury Indian Beauty Lounge & Academy",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 3000",
+    "build": "echo 'Static site, no build needed'",
+    "start": "python -m http.server 3000"
+  },
+  "keywords": [
+    "beauty",
+    "salon",
+    "bridal-makeup",
+    "hair-treatment",
+    "luxury",
+    "academy"
+  ],
+  "author": "Mirrors N Scissors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}

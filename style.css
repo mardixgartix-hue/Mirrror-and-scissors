@@ -970,6 +970,316 @@ button { cursor: pointer; font-family: inherit; }
   background: var(--ivory);
 }
 
+/* ==========================================================================
+   SERVICES PAGE — PREMIUM MENU
+   ========================================================================== */
+.services-page-main {
+  background: var(--maroon-deep);
+}
+
+.services-hero {
+  background:
+    linear-gradient(135deg, rgba(92,16,32,0.92), rgba(58,8,18,0.86)),
+    url('images/hero-3.jpg') center/cover no-repeat;
+  color: var(--ivory);
+}
+
+.services-hero-inner {
+  text-align: center;
+}
+
+.services-hero-title {
+  font-family: var(--ff-serif);
+  font-size: clamp(2.3rem, 5vw, 4.25rem);
+  line-height: 1.1;
+  color: var(--ivory);
+  margin-bottom: 18px;
+}
+
+.services-hero-copy {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.04rem;
+  color: rgba(253,250,246,.84);
+  line-height: 1.8;
+}
+
+.services-hero-meta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 26px;
+}
+
+.services-hero-meta span {
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(212,175,106,.28);
+  border-radius: var(--r-pill);
+  padding: 7px 14px;
+  font-size: .76rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+}
+
+.services-menu {
+  background: var(--maroon-deep);
+  padding-top: 10px;
+}
+
+.services-category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.service-category-card {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(212,175,106,.12);
+  border-radius: var(--r-lg);
+  padding: 20px 20px 18px;
+  transition: var(--transition);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.04);
+}
+
+.service-category-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(212,175,106,.35);
+  box-shadow: 0 18px 42px rgba(0,0,0,.18);
+}
+
+.service-category-card.span-2 {
+  grid-column: span 2;
+}
+
+.category-header {
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  padding-bottom: 14px;
+  margin-bottom: 14px;
+}
+
+.category-kicker {
+  display: inline-block;
+  font-size: .66rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 6px;
+}
+
+.category-header h3 {
+  font-family: var(--ff-serif);
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+  color: var(--ivory);
+  font-weight: 600;
+}
+
+.category-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.service-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px dashed rgba(255,255,255,.08);
+  color: rgba(253,250,246,.88);
+  font-size: .87rem;
+  flex-wrap: wrap;
+}
+
+.service-row:last-child {
+  border-bottom: none;
+}
+
+.service-row span {
+  flex: 1 1 140px;
+  min-width: 0;
+}
+
+.service-row strong {
+  color: var(--gold-light);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.service-book-btn {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 70px;
+  padding: 7px 12px;
+  border-radius: var(--r-sm);
+  border: 1px solid rgba(212,175,106,.45);
+  background: rgba(212,175,106,.10);
+  color: var(--ivory);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  transition: var(--transition);
+}
+
+.service-book-btn:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--maroon-deep);
+}
+
+.waxing-body {
+  gap: 0;
+}
+
+.wax-table {
+  display: grid;
+  grid-template-columns: 1.4fr repeat(4, minmax(56px, 1fr));
+  gap: 10px 12px;
+  font-size: .78rem;
+  color: rgba(253,250,246,.9);
+}
+
+.wax-head, .wax-label {
+  font-weight: 600;
+}
+
+.wax-head {
+  color: var(--gold-light);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  font-size: .62rem;
+}
+
+.wax-label {
+  color: var(--ivory);
+}
+
+.wax-table > div {
+  padding: 6px 0;
+  border-bottom: 1px dashed rgba(255,255,255,.08);
+}
+
+.s-sub-light {
+  color: rgba(253,250,246,.78);
+}
+
+.wa-booking {
+  background: linear-gradient(180deg, var(--maroon-deep) 0%, #2d0711 100%);
+  color: var(--ivory);
+}
+
+.wa-booking-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.wa-copy {
+  color: var(--ivory);
+}
+
+.wa-copy .s-title {
+  color: var(--ivory);
+  text-shadow: 0 2px 18px rgba(0,0,0,.28);
+  letter-spacing: .02em;
+}
+
+.wa-copy p:last-child {
+  max-width: 500px;
+  font-size: 1rem;
+  color: rgba(253,250,246,.8);
+  line-height: 1.8;
+}
+
+.wa-form-card {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(212,175,106,.2);
+  border-radius: var(--r-lg);
+  padding: 28px;
+  box-shadow: var(--sh-md);
+}
+
+.wa-form {
+  display: grid;
+  gap: 18px;
+}
+
+.field-row {
+  display: grid;
+  gap: 8px;
+}
+
+.field-row label {
+  font-size: .8rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  font-weight: 600;
+}
+
+.wa-form input,
+.wa-form select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: var(--r-sm);
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(253,250,246,.96);
+  color: var(--ink);
+  font-size: .96rem;
+  outline: none;
+}
+
+.wa-form input:focus,
+.wa-form select:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(184,146,58,.2);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+@media (max-width: 980px) {
+  .wa-booking-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 980px) {
+  .services-category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .services-category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-category-card.span-2 {
+    grid-column: span 1;
+  }
+
+  .wax-table {
+    grid-template-columns: 1.2fr repeat(2, minmax(52px, 1fr));
+    overflow-x: auto;
+  }
+}
+
 
 /* ==========================================================================
    HAIR TREATMENTS

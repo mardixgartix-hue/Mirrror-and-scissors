@@ -553,6 +553,54 @@ button { cursor: pointer; font-family: inherit; }
 }
 .service-cell:hover { background: var(--ivory); }
 
+.service-cell { position: relative; }
+
+.service-number {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--ivory-dark);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: var(--maroon-deep);
+  font-size: .95rem;
+  box-shadow: var(--sh-xs);
+}
+
+/* Numbered ordered lists used in some service sections */
+.numbered-list {
+  counter-reset: item;
+  list-style: none;
+  padding-left: 0;
+}
+.numbered-list li {
+  counter-increment: item;
+  position: relative;
+  padding-left: 52px;
+  margin-bottom: 10px;
+  color: var(--ink-mid);
+}
+.numbered-list li::before {
+  content: counter(item) '.';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ivory-dark);
+  color: var(--maroon-deep);
+  font-weight: 700;
+}
+
 .service-icon {
   width: 44px; height: 44px;
   border-radius: var(--r-sm);

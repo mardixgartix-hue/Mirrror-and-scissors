@@ -1011,14 +1011,15 @@ button { cursor: pointer; font-family: inherit; }
 }
 
 .services-hero-meta span {
-  background: rgba(255,255,255,.06);
-  border: 1px solid rgba(212,175,106,.28);
+  background: rgba(212,175,106,.25);
+  border: 1px solid rgba(212,175,106,.5);
   border-radius: var(--r-pill);
   padding: 7px 14px;
   font-size: .76rem;
   letter-spacing: .06em;
   text-transform: uppercase;
-  color: var(--gold-light);
+  color: var(--ivory);
+  font-weight: 600;
 }
 
 .services-menu {

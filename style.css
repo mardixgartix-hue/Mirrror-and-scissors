@@ -631,6 +631,24 @@ button { cursor: pointer; font-family: inherit; }
   .services-grid { grid-template-columns: 1fr; }
 }
 
+/* Right-aligned price rows for menu-style sections */
+.menu-list { display: flex; flex-direction: column; gap: 6px; }
+.menu-item { display:flex; justify-content:space-between; align-items:flex-start; gap:12px; padding:6px 0; color: rgba(253,250,246,.95); }
+.menu-item .label { color: rgba(253,250,246,.95); }
+.menu-item .price { color: var(--gold-light); font-weight:700; }
+
+.wax-table { display: grid; grid-template-columns: 1fr repeat(3, auto); gap: 12px; align-items: center; }
+.wax-table .col-head { font-weight:700; color: rgba(253,250,246,.9); text-align:right; }
+.wax-table .wax-row { display: contents; }
+.wax-row .label { padding: 8px 0; }
+.wax-row .price { text-align:right; padding: 8px 0; }
+
+/* Two-column menu layout for waxing/skin area */
+.menu-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+@media (max-width: 980px) { .menu-columns { grid-template-columns: 1fr; } }
+
+.section-box { background: rgba(255,255,255,0.02); padding: 18px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.03); }
+
 .service-icon {
   width: 44px; height: 44px;
   border-radius: var(--r-sm);

@@ -1261,7 +1261,17 @@ button { cursor: pointer; font-family: inherit; }
   position: relative;
 }
 
+.services-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.4);
+  pointer-events: none;
+}
+
 .services-hero-inner {
+  position: relative;
+  z-index: 1;
   text-align: center;
 }
 
